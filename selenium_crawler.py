@@ -8,7 +8,7 @@ def take_screenshot(url: str, user_agent: str, save_path: str) -> str:
     options.headless = True
     if user_agent:
         options.add_argument(f"user-agent={user_agent}")
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(options=options, executable_path='./chromedriver')
     
     driver.get(url)
     
