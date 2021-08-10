@@ -2,6 +2,9 @@
 
 Scanner for Haaretz paywall. generate full-page screenshot for given url
 
+## DISCLAIMER
+The full rights of any website content belongs to the website owners. anyone who use this program is self-responsible for it use.
+
 
 ##  Clone
 
