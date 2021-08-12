@@ -2,6 +2,9 @@
 
 Scanner for Haaretz paywall. generate full-page screenshot for given url
 
+## DISCLAIMER
+The full rights of any website content belongs to the website owners. anyone who use this program is self-responsible for it use.
+
 
 ##  Clone
 
@@ -21,5 +24,8 @@ from the [chromedriver download page](https://chromedriver.chromium.org/download
 
 ## useage 
 ```
+cd ./shocken-awe
+
 python3 main.py -url SOME-HAARETZ-URL.COM -s SAVE-PATH
 ```
+it may take a minute for the selenium driver to work
