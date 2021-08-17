@@ -1,9 +1,9 @@
 # shocken-awe
 
-Scanner for Haaretz paywall. generate full-page screenshot for given url
+Scanner for Haaretz paywall. generate html file or full-page screenshot for given url
 
 ## DISCLAIMER
-The full rights of any website content belongs to the website owners. anyone who use this program is self-responsible for it use.
+This code was created and published for educational and academic use only. The full rights of any website content belongs to the website owners. anyone who use this program is self-responsible for it use.
 
 
 ##  Clone
@@ -26,6 +26,11 @@ from the [chromedriver download page](https://chromedriver.chromium.org/download
 ```
 cd ./shocken-awe
 
-python3 main.py -url SOME-HAARETZ-URL.COM -s SAVE-PATH
+# take screenshot
+python3 main.py -img -url SOME-HAARETZ-URL.COM -s SAVE-PATH
+
+# save html file (recomended)
+python3 main.py -html -url SOME-HAARETZ-URL.COM -s SAVE-PATH
 ```
-it may take a minute for the selenium driver to work
+
+* html is the faster and lighter option, but may not save pictures.
