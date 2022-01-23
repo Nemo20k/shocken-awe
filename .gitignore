@@ -4,3 +4,4 @@ output*
 screenshot*
 launch.json
 *.pyc
+.DS_Store
