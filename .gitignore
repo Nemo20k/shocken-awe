@@ -3,3 +3,4 @@ out*.html
 output*
 screenshot*
 launch.json
+*.pyc
