@@ -13,7 +13,7 @@ def take_html(url: str, user_agent: str, save_path:str='haaretz_article.html', *
         response = requests.get(url, headers=headers)
     except Exception as e:
         print(f'failed to connect to: {url}\nwith exception:\n', e.args)
-        return
+        return f'failed! {e}'
     if not save_path.endswith('.html'):
         save_path += '.html'
     with open(save_path, 'w') as f:
