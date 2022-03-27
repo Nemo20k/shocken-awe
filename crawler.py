@@ -2,6 +2,7 @@ import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import requests
+import os
 
 
 CHROME_DRIVER_PATH = './chromedriver'
@@ -18,7 +19,9 @@ def take_html(url: str, user_agent: str, save_path:str='haaretz_article.html', *
         save_path += '.html'
     with open(save_path, 'w') as f:
         f.write(response.text)
-    return save_path
+    full_path = os.path.join(os.getcwd(), save_path)
+    print(full_path)
+    return full_path
 
 
 def take_screenshot(url: str, user_agent: str, save_path: str, **kwargs) -> str:
