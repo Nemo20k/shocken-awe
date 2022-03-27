@@ -17,8 +17,9 @@ def get_url():
         if not url:
             return 'no url is given'
         article_name = os.path.split(url)[-1].replace('.html', '')
-        full_path = take_html(url, user_agent=UA, save_path=f'templates/article.html')
+        full_path = take_html(url, user_agent=UA, save_path=f'templates/{article_name}.html')
         template_path = os.path.split(full_path)[-1]
+        print('#####################', url, template_path)
         return render_template(template_path)
     except Exception as e:
         return (f'failed to get {url}, with exception:\n{e}')
