@@ -5,3 +5,5 @@ screenshot*
 launch.json
 *.pyc
 .DS_Store
+venv/
+__pycache__/
